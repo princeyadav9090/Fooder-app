@@ -5,20 +5,25 @@ An AR based food ordering app
 This project uses the Vuforia Engine (v10.27.3) via Unity's Package Manager.
 
 🔧 How to Install Vuforia
-    1. Open the Unity project.
-    2. Go to Edit > Project Settings > Package Manager.
-    3. Under Scoped Registries, click the "+" button and enter:
+Open the Unity project.
 
-       Name: Vuforia
-       URL: https://registry.packages.vuforia.com/
-       Scope(s): com.ptc.vuforia.engine
+Go to Edit > Project Settings > Package Manager.
 
-    4. Save the changes.
-    5. Open Packages/manifest.json and add the Vuforia dependency:
+Under Scoped Registries, click the "+" button and enter:
 
-       "dependencies": {
-         "com.ptc.vuforia.engine": "10.27.3",
-         // other dependencies...
-       }
+makefile -
 
-    6.Unity will automatically fetch and install the Vuforia package.
+Name: Vuforia
+URL: https://registry.packages.vuforia.com/
+Scope(s): com.ptc.vuforia.engine
+Save the changes.
+
+Open Packages/manifest.json and add the Vuforia dependency:
+
+json -
+
+"dependencies": {
+  "com.ptc.vuforia.engine": "10.27.3",
+  // other dependencies...
+}
+Unity will automatically fetch and install the Vuforia package.
